@@ -73,6 +73,6 @@ EXPOSE 4403
 # Expose Meshtastic Web UI port from the host
 EXPOSE 9443
 
-CMD [ "sh", "-cx", "meshtasticd --fsdir=/var/lib/meshtasticd" ]
+CMD [ "sh", "-cx", "meshtasticd --verbose --fsdir=/var/lib/meshtasticd" ]
 
 HEALTHCHECK NONE
